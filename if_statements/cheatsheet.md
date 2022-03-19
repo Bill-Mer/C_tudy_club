@@ -1,4 +1,5 @@
 # boolean values; if statements; switch case; ?: operator
+## if statements
 Οι λογικές τιμές που υπάρχουν στην C είναι οι true και false. Όμως, επειδή στη βασική βιβλιοθήκη δεν υπάρχουν τα keywords `true` και `false`,
 αυτά αναπαριστώνται με 1 και 0 αντίστοιχα.
 
@@ -81,4 +82,46 @@ if (9 < 6) {
 ```
 ```
 the second statement is true
+```
+## switch case
+Η switch case εξετάζει εάν μια μεταβλητή παίρνει κάποια από συγκεκριμένες διακριτές τιμές. Για να μη τρέξει η επόμενη `case` θα πρέπει να σταματήσει 
+η ροή με την `break`
+```c
+int variable = 2;
+switch(variable) {    
+    case 1:
+        printf("variable = 1\n");
+        break;
+    case 2:
+        printf("variable = 2\n");
+    case 3:
+        // this will be printed as well because case 2 doesn't have break
+        printf("variable = 3\n");
+        break;
+    default:
+        printf("variable is not 1, 2 nor 3\n");
+        // default doesn't need break because it is the last case
+}
+```
+```
+variable = 2
+variable = 3
+```
+## ?: operator
+Μία `if`-`else` συνθήκη μπορεί να γραφεί σε μία σειρά με την εξής σύνταξη: 
+
+`{statement} ? {body if statement == true} : {body if statement is false}`
+Για παράδειγμα ο παρακάτω κώδικας:
+```c
+int i = 3;
+if (i == 4) {
+    printf("i is equal to 4\n");
+} else {
+    printf("i is not equal to 4\n");
+}
+```
+Μπορεί να γραφεί σε 2 σειρές ως εξής:
+```c
+int i = 3;
+printf(i == 4 ? "i is equal to 4\n" : "i is not equal to 4\n");
 ```
