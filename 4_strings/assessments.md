@@ -4,3 +4,11 @@
 You entered more than 10 chars
 You entered less than or equal to 10 chars
 ```
+
+2. Να δημιουργηθεί ένα πρόγραμμα που θα παίρνει input από τον χρήστη με
+μέγιστο αριθμό χαρακτήρων το 50, θα αφερεί το χαρακτήρα `\n` εάν υπάρχει
+και θα αντικαθηστά όλους τους χαρακτήρες `a` με τον χαρακτήρα `o`. Τέλος
+θα εμφανίζει το παραχθέν αλφαριθμητικό.
+
+Input: `apples and bananas\n`
+Output: `opples and bononos`
