@@ -13,3 +13,13 @@ You entered less than or equal to 10 chars
 Input: `apples and bananas\n`
 
 Output: `opples ond bononos`
+
+3. Hard challenge! Να δημιουργηθεί πρόγραμμα που αρχικά να αρχικοποιεί 
+δύο strings:
+```c
+char a[] = "hello ";
+char b[] = "world!";
+```
+και μετά να αρχικοποιεί ένα τρίτο string και να το θέτει ίσο με την ένωση
+των δύο πρώτων μεταβλητών δυναμικά (`hello world!`) και να εμφανίζει στην
+οθόνη το αποτέλεσμα.
