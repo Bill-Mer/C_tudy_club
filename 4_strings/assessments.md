@@ -2,5 +2,5 @@
 εμφανίζει αν εισήγαγε περισσότερους απο 10 χαρακτήρες.
 ```
 You entered more than 10 chars
-You entered less or equal to 10 chars
+You entered less than or equal to 10 chars
 ```
